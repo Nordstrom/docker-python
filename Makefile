@@ -9,6 +9,3 @@ build: Dockerfile $(build_container_prereqs)
 
 tag: build
 	docker tag $(container_name) $(container_registry)/$(container_name):$(container_release)
-
-release: tag
-	docker push $(container_registry)/$(container_name):$(container_release)
