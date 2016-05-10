@@ -4,4 +4,5 @@ MAINTAINER Store Modernization Platform Team "invcldtm@nordstrom.com"
 RUN apt-get update -qy \
  && apt-get install -qy \
       python2.7 \
-      python-pip
+      python-pip \
+      python-setuptools
