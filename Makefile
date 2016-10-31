@@ -1,6 +1,7 @@
 image_name := python
 image_registry := quay.io/nordstrom
-image_release := 2.7
+python_version := 2.7
+image_release := $(python_version)
 
 ifdef http_proxy
 build_args := --build-arg="http_proxy=$(http_proxy)"
