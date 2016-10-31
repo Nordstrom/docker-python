@@ -1,5 +1,5 @@
 FROM quay.io/nordstrom/baseimage-ubuntu:16.04
-MAINTAINER Nordstrom Kubernetes Platform Team "invcldtm@nordstrom.com"
+MAINTAINER Nordstrom Kubernetes Platform Team "techk8s@nordstrom.com"
 
 USER root
 
