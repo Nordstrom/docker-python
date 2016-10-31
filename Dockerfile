@@ -6,6 +6,7 @@ USER root
 RUN apt-get update -qy \
  && apt-get install -qy \
       python2.7 \
-      python-pip
+      python-pip \
+ && pip install --upgrade pip
 
 USER ubuntu
