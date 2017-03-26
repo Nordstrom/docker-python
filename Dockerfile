@@ -7,7 +7,7 @@ RUN apt-get update -qy \
  && apt-get install -qy \
       python2.7 \
       python-pip \
-      python-setuptools
+      python-setuptools \
  && pip install --upgrade pip
 
 USER ubuntu
