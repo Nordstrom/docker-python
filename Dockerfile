@@ -1,8 +1,13 @@
 FROM quay.io/nordstrom/baseimage-ubuntu:16.04
-MAINTAINER Store Modernization Platform Team "invcldtm@nordstrom.com"
+MAINTAINER Nordstrom Kubernetes Platform Team "techk8s@nordstrom.com"
+
+USER root
 
 RUN apt-get update -qy \
  && apt-get install -qy \
       python2.7 \
       python-pip \
       python-setuptools
+ && pip install --upgrade pip
+
+USER ubuntu
