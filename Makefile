@@ -4,7 +4,7 @@ python_version := 2.7
 image_release := $(python_version)
 
 ifdef http_proxy
-build_args := --build-arg="http_proxy=$(http_proxy)"
+build_args += --build-arg="http_proxy=$(http_proxy)"
 build_args += --build-arg="https_proxy=$(http_proxy)"
 endif
 
