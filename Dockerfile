@@ -10,4 +10,4 @@ RUN apt-get update -qy \
       python-setuptools \
  && pip install --upgrade pip
 
-USER ubuntu
+USER nordstrom
