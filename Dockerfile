@@ -5,9 +5,9 @@ USER root
 
 RUN apt-get update -qy \
  && apt-get install -qy \
-      python2.7 \
-      python-pip \
-      python-setuptools \
- && pip install --upgrade pip
+      python3 \
+      python3-pip \
+      python3-setuptools \
+ && pip3 install --upgrade pip
 
 USER nordstrom
